@@ -1,0 +1,428 @@
+/* Hipster */
+/*
+@base : #4FC1E9;
+@baseDark : #3BAFDA;
+
+@secondBase : #FC6E51;
+@secondBaseDark: #E9573F;
+
+@baseInputColor : @secondBase;
+@baseInputDarkColor : @secondBaseDark;
+
+@warningInputColor : @secondBase;
+@warningInputDarkColor : @secondBaseDark;
+
+@successGreen : #ADD468;
+@successGreenAlternative : #BCC152;
+
+@baseFontColor : #999;
+@background : #f6f6f6;
+*/
+/* Under sea */
+/*#27ae60;*/
+/*#27ae60;*/
+/* 1.1 Top Header Dashboard */
+/* Paw Studio */
+/*
+@base : #92dce0;
+@baseDark : darken(@base, 15%);
+
+@secondBase : #ef9950;
+@secondBaseDark: darken(@secondBase, 15%);
+
+@baseInputColor : @secondBase;
+@baseInputDarkColor : @secondBaseDark;
+
+@warningInputColor : @secondBase;
+@warningInputDarkColor : @secondBaseDark;
+
+@successGreen : #27ae60;
+@successGreenAlternative : #1fda9a;
+
+@baseFontColor : #999;
+@background : #f6f6f6;
+*/
+/* Mohiuddin Parekh */
+/*
+@base : #59c8df;
+@baseDark : darken(@base, 15%);
+
+@secondBase : #d14d28;
+@secondBaseDark: darken(@secondBase, 15%);
+
+@baseInputColor : @secondBase;
+@baseInputDarkColor : @secondBaseDark;
+
+@warningInputColor : @secondBase;
+@warningInputDarkColor : @secondBaseDark;
+
+@successGreen : #27ae60;
+@successGreenAlternative : #1fda9a;
+
+@baseFontColor : #999;
+@background : #f6f6f6;
+*/
+/* Invira */
+/*
+@base : #8dbae3;
+@baseDark : darken(@base, 15%);
+
+@secondBase : #ffad98;
+@secondBaseDark: darken(@secondBase, 15%);
+
+@baseInputColor : @secondBase;
+@baseInputDarkColor : @secondBaseDark;
+
+@warningInputColor : @secondBase;
+@warningInputDarkColor : @secondBaseDark;
+
+@successGreen : #27ae60;
+@successGreenAlternative : #1fda9a;
+
+@baseFontColor : #999;
+@background : #f6f6f6;
+*/
+/* Under see 2*/
+/*
+@base : #7fd8c2;
+@baseDark : darken(@base, 10%);
+
+@secondBase : #a53239;
+@secondBaseDark: darken(@secondBase, 10%);
+
+@baseInputColor : @secondBase;
+@baseInputDarkColor : @secondBaseDark;
+
+@warningInputColor : @secondBase;
+@warningInputDarkColor : @secondBaseDark;
+
+@baseFontColor : #999;
+@background : #f6f6f6;
+*/
+/* CampFire Color 1*/
+/*
+@base : #8c4646;
+@baseDark : darken(@base, 10%);
+
+@secondBase : #f2ae72;
+@secondBaseDark: darken(@secondBase, 10%);
+
+@baseInputColor : @secondBase;
+@baseInputDarkColor : @secondBaseDark;
+
+@warningInputColor : @secondBase;
+@warningInputDarkColor : @secondBaseDark;
+
+@successGreen : #27ae60;
+@successGreenAlternative : #1fda9a;
+
+@baseFontColor : #999;
+@background : #f6f6f6;
+*/
+/* CampFire Color 2*/
+/*
+@base : #58788d;
+@baseDark : darken(@base, 10%);
+
+@secondBase : #c73935;
+@secondBaseDark: darken(@secondBase, 10%);
+
+@baseInputColor : @secondBase;
+@baseInputDarkColor : @secondBaseDark;
+
+@warningInputColor : @secondBase;
+@warningInputDarkColor : @secondBaseDark;
+
+@baseFontColor : #999;
+*/
+.main-footer .fa.fa-heart {
+  color: #c73935;
+}
+html.decks.edit body {
+  background: #eee;
+  background: -moz-radial-gradient(center, circle cover, #f7fbfc 0%, #eeeeee 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #f7fbfc), color-stop(100%, #eeeeee));
+  background: -webkit-radial-gradient(center, circle cover, #f7fbfc 0%, #eeeeee 100%);
+  background: -o-radial-gradient(center, circle cover, #f7fbfc 0%, #eeeeee 100%);
+  background: -ms-radial-gradient(center, circle cover, #f7fbfc 0%, #eeeeee 100%);
+  background: radial-gradient(center, circle cover, #f7fbfc 0%, #eeeeee 100%);
+  background-color: #f7fbfc;
+}
+.invira a {
+  line-height: 1.3em;
+}
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+body {
+  background: #F0F1EB;
+  background-color: #F0F1EB;
+}
+.invira {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  color: #000;
+}
+::selection {
+  color: #111;
+  background: rgba(141, 186, 227, 0.2);
+  text-shadow: none;
+}
+::-moz-selection {
+  background: none repeat scroll 0% 0% rgba(141, 186, 227, 0.2);
+  color: #111;
+  text-shadow: none;
+}
+.invira .slides > section,
+.invira .slides > section > section {
+  line-height: 1.3;
+  font-weight: inherit;
+}
+/*********************************************
+ * HEADERS
+ *********************************************/
+.invira h1,
+.invira h2,
+.invira h3,
+.invira h4,
+.invira h5,
+.invira h6 {
+  color: #383D3D;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-transform: none;
+  text-shadow: none;
+  word-wrap: break-word;
+}
+.invira h1 {
+  font-size: 2.00em;
+}
+.invira h2 {
+  font-size: 1.80em;
+}
+.invira h3 {
+  font-size: 1.55em;
+}
+.invira h4 {
+  font-size: 1em;
+}
+.invira h1 {
+  text-shadow: none;
+}
+/*********************************************
+ * OTHER
+ *********************************************/
+.invira p {
+  line-height: 1.3;
+}
+/* Ensure certain elements are never larger than the slide itself */
+.invira img,
+.invira video,
+.invira iframe {
+  max-width: 95%;
+  max-height: 95%;
+}
+.invira strong,
+.invira b {
+  font-weight: bold;
+}
+.invira em {
+  font-style: italic;
+}
+.invira ol,
+.invira dl,
+.invira ul {
+  display: inline-block;
+  text-align: left;
+  margin: 0 0 0 1em;
+}
+.invira ol {
+  list-style-type: decimal;
+}
+.invira ul {
+  list-style-type: disc;
+}
+.invira ul ul {
+  list-style-type: square;
+}
+.invira ul ul ul {
+  list-style-type: circle;
+}
+.invira ul ul,
+.invira ul ol,
+.invira ol ol,
+.invira ol ul {
+  display: block;
+  margin-left: 40px;
+}
+.invira dt {
+  font-weight: bold;
+}
+.invira dd {
+  margin-left: 40px;
+}
+.invira q,
+.invira blockquote {
+  quotes: none;
+}
+.invira blockquote {
+  display: block;
+  position: relative;
+  width: 70%;
+  margin: 20px auto;
+  font-style: italic;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+}
+.invira blockquote p:first-child,
+.invira blockquote p:last-child {
+  display: inline-block;
+}
+.invira q {
+  font-style: italic;
+}
+.invira pre {
+  display: block;
+  position: relative;
+  width: 90%;
+  margin: 20px auto;
+  text-align: left;
+  font-size: 0.55em;
+  font-family: monospace;
+  line-height: 1.2em;
+  word-wrap: break-word;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+}
+.invira code {
+  font-family: monospace;
+}
+.invira pre code {
+  display: block;
+  padding: 5px;
+  overflow: auto;
+  /* max-height: 400px; */
+  word-wrap: normal;
+  background: #3F3F3F;
+  color: #DCDCDC;
+}
+.invira table {
+  margin: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.invira table th {
+  font-weight: bold;
+}
+.invira table th,
+.invira table td {
+  text-align: left;
+  padding: 0.2em 0.5em 0.2em 0.5em;
+  border-bottom: 1px solid;
+}
+.invira table tr:last-child td {
+  border-bottom: none;
+}
+.invira sup {
+  vertical-align: super;
+}
+.invira sub {
+  vertical-align: sub;
+}
+.invira small {
+  display: inline-block;
+  font-size: 0.6em;
+  line-height: 1.2em;
+  vertical-align: top;
+}
+.invira small * {
+  vertical-align: top;
+}
+/*********************************************
+ * LINKS
+ *********************************************/
+.invira a {
+  color: #51483D;
+  text-decoration: none;
+  -webkit-transition: color 0.15s ease;
+  -moz-transition: color 0.15s ease;
+  transition: color 0.15s ease;
+}
+.invira a:hover {
+  color: #8b7b69;
+  text-shadow: none;
+  border: none;
+}
+.invira .roll span:after {
+  color: #fff;
+  background: #25211c;
+}
+/*********************************************
+ * IMAGES
+ *********************************************/
+.invira section img {
+  margin: 7.5px 0px;
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+.invira a img {
+  -webkit-transition: all 0.15s linear;
+  -moz-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+.invira a:hover img {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #51483D;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
+}
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+.invira .controls div.navigate-left,
+.invira .controls div.navigate-left.enabled {
+  border-right-color: #5798d0;
+}
+.invira .controls div.navigate-right,
+.invira .controls div.navigate-right.enabled {
+  border-left-color: #5798d0;
+}
+.invira .controls div.navigate-up,
+.invira .controls div.navigate-up.enabled {
+  border-bottom-color: #5798d0;
+}
+.invira .controls div.navigate-down,
+.invira .controls div.navigate-down.enabled {
+  border-top-color: #5798d0;
+}
+.invira .controls div.navigate-left.enabled:hover {
+  border-right-color: #8dbae3;
+}
+.invira .controls div.navigate-right.enabled:hover {
+  border-left-color: #8dbae3;
+}
+.invira .controls div.navigate-up.enabled:hover {
+  border-bottom-color: #8dbae3;
+}
+.invira .controls div.navigate-down.enabled:hover {
+  border-top-color: #8dbae3;
+}
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+.invira .progress {
+  background: rgba(0, 0, 0, 0.2);
+}
+.invira .progress span {
+  background: #8dbae3;
+  -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+}
+/*********************************************
+ * SLIDE NUMBER
+ *********************************************/
+.invira .slide-number {
+  color: #51483D;
+}

@@ -1,0 +1,49 @@
+<div class="second-header">
+    <div class="second-header-inner">
+        <h3>Presentations</h3>
+    </div>
+</div>
+<div class="container-fluid dashboard">
+
+    <div class="row">
+        <div class="col-lg-12">
+            <section class="content">
+                {{#if user.settings.betaChannel}}
+                {{#if projects}}
+                <div class="row project-listing">
+                    {{#each projects}}
+
+                    {{#modulo nth=4}}
+                    <div class="row">
+                        {{/modulo}}
+
+                        {{> dashboard/project}}
+
+                        {{#modulo nth=4}}
+                    </div>
+                    {{/modulo}}
+                    {{/each}}
+                </div>
+                {{else}}
+                <div class="row">
+                    <div class="no-projects-found">
+                        <h3>Sorry there were no presentations found</h3>
+                    </div>
+                    <div class="no-projects" id="no-projects-icon">
+                        <i class="fa fa-hand-o-up" style="padding: 20px; font-size: 70px;"></i>
+                    </div>
+                </div>
+
+                {{/if}}
+                {{else}}
+                <div class="row">
+                    <div class="thanks">
+                        <h3>Thanks for your interest. We will send out beta invitations soon.</h3>
+                    </div>
+                </div>
+                {{/if}}
+            </section>
+        </div>
+    </div>
+
+</div>

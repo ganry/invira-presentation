@@ -1,0 +1,204 @@
+@import 'var.less';
+
+@timelineBase : @base;
+@timelineSecond : @baseDark;
+
+@font-face {
+  font-family: 'ecoico';
+  src:url('../fonts/ecoico.eot');
+  src:url('../fonts/ecoico.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ecoico.woff') format('woff'),
+  url('../fonts/ecoico.ttf') format('truetype'),
+  url('../fonts/ecoico.svg#ecoico') format('svg');
+  font-weight: normal;
+  font-style: normal;
+} /* Made with http://icomoon.io/ */
+
+.invira_tmtimeline {
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  margin: 30px 0 0 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+
+/* The line */
+.invira_tmtimeline:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10px;
+  background: @timelineSecond;
+  left: 20%;
+  margin-left: -10px;
+}
+
+.invira_tmtimeline > li {
+  padding-bottom: 50px;
+  position: relative;
+}
+
+/* The date/time */
+.invira_tmtimeline > li .invira_tmtime {
+  display: block;
+  width: 25%;
+  padding-right: 100px;
+  position: absolute;
+}
+
+.invira_tmtimeline > li .invira_tmtime span {
+  display: block;
+  text-align: right;
+}
+
+.invira_tmtimeline > li .invira_tmtime span:first-child {
+  font-size: 1.5em;
+  color: #bdd0db;
+}
+
+.invira_tmtimeline > li .invira_tmtime span:last-child {
+  font-size: 3.5em;
+  color: @timelineBase;
+}
+
+.invira_tmtimeline > li:nth-child(odd) .invira_tmtime span:last-child {
+  color: @timelineSecond;
+}
+
+/* Right content */
+.invira_tmtimeline > li .invira_tmlabel {
+  margin: 0 100px 15px 25%;
+  background: @timelineBase;
+  color: #fff;
+  padding: 2em;
+  font-size: 1.8em;
+  font-weight: 300;
+  line-height: 1.4;
+  position: relative;
+  border-radius: 5px;
+}
+
+.invira_tmtimeline > li:nth-child(odd) .invira_tmlabel {
+  background: @timelineSecond;
+}
+
+.invira_tmtimeline > li .invira_tmlabel p {
+  padding: 5px 0 0 0;
+}
+
+.invira_tmtimeline > li .invira_tmlabel h2 {
+  font-size: 30px;
+  margin-top: 0px;
+  padding: 0 0 5px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.4);
+}
+
+/* The triangle */
+.invira_tmtimeline > li .invira_tmlabel:after {
+  right: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-right-color: @timelineBase;
+  border-width: 10px;
+  top: 10px;
+}
+
+.invira_tmtimeline > li:nth-child(odd) .invira_tmlabel:after {
+  border-right-color: @timelineSecond;
+}
+
+/* The icons */
+.invira_tmtimeline > li .invira_tmicon {
+  width: 40px;
+  height: 40px;
+  font-family: 'FontAwesome';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: 2.4em;
+  line-height: 40px;
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  color: @timelineSecond;
+  background: lighten(@timelineSecond, 80%);
+  border-radius: 50%;
+  box-shadow: 0 0 0 8px @timelineSecond;
+  text-align: center;
+  left: 20%;
+  top: 0;
+  margin: 0 0 0 -25px;
+}
+
+.invira_tmicon-phone:before {
+  content: "\e000";
+}
+
+.invira_tmicon-screen:before {
+  content: "\e001";
+}
+
+.invira_tmicon-mail:before {
+  content: "\e002";
+}
+
+.invira_tmicon-earth:before {
+  content: "\e003";
+}
+
+/* Example Media Queries */
+@media screen and (max-width: 65.375em) {
+
+  .invira_tmtimeline > li .invira_tmtime span:last-child {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 47.2em) {
+  .invira_tmtimeline:before {
+    display: none;
+  }
+
+  .invira_tmtimeline > li .invira_tmtime {
+    width: 100%;
+    position: relative;
+    padding: 0 0 20px 0;
+  }
+
+  .invira_tmtimeline > li .invira_tmtime span {
+    text-align: left;
+  }
+
+  .invira_tmtimeline > li .invira_tmlabel {
+    margin: 0 0 30px 0;
+    padding: 1em;
+    font-weight: 400;
+    font-size: 95%;
+  }
+
+  .invira_tmtimeline > li .invira_tmlabel:after {
+    right: auto;
+    left: 20px;
+    border-right-color: transparent;
+    border-bottom-color: @timelineBase;
+    top: -20px;
+  }
+
+  .invira_tmtimeline > li:nth-child(odd) .invira_tmlabel:after {
+    border-right-color: transparent;
+    border-bottom-color: @timelineSecond;
+  }
+
+  .invira_tmtimeline > li .invira_tmicon {
+    position: relative;
+    float: right;
+    left: auto;
+    margin: -55px 5px 0 0px;
+  }
+}

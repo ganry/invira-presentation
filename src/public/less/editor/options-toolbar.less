@@ -1,0 +1,49 @@
+@import 'var.less';
+
+  /* mini options bar */
+html.decks.edit .projector .slide-options-toolbar {
+  position: absolute;
+  width: 45px;
+  font-size: 15px;
+  z-index: 100;
+  -webkit-perspective: 600px;
+  perspective: 600px;
+  background: #FAFAFA;
+  border: 1px solid #EDEDED;
+  top: 32px;
+}
+
+html.decks.edit .projector .slide-options-toolbar .toolbar-option.active {
+  background-color: #EFEFEF;
+  color: #111;
+}
+
+html.decks.edit .projector .slide-options-toolbar .toolbar-option {
+  width: 100%;
+  padding: 12px 0;
+  text-align: center;
+  color: @baseFontColor;
+  cursor: pointer;
+  font-size: 12px;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+html.decks.edit .projector .slide-options-toolbar .toolbar-option.warning {
+  color: @secondBase;
+}
+
+html.decks.edit .projector .slide-options-toolbar .toolbar-option:hover {
+  background-color: #EFEFEF;
+  /*border-left: 5px solid @base;*/
+  color: #111;
+
+}
+
+
+html.decks.edit .projector .slide-options-toolbar .toolbar-option .toolbar-option-icon {
+  display: block;
+  font-size: 2em;
+  pointer-events: none;
+}
+

@@ -1,0 +1,29 @@
+{{> editor/editorHeader}}
+{{> editor/editorMenu}}
+
+<article class="projector">
+    <div class="invira-viewport">
+        <div class="invira slide has-light-background" role="application" data-transition-speed="default" data-background-transition="slide">
+            <div class="slides" id="editor-deck" data-width="{{projectWidth}}" data-height="{{projectHeight}}">
+                {{{content}}}
+            </div>
+
+        </div>
+    </div>
+
+    <div class="icon add-horizontal-slide show">
+        <span class="icon fa fa-plus"></span>
+    </div>
+
+    <div class="icon add-vertical-slide show">
+        <span class="icon fa fa-plus"></span>
+    </div>
+
+    {{> aboutDialog}}
+
+    {{> editor/optionsToolbar}}
+
+</article>
+
+{{> editor/widgets/textWidgetToolbar}}
+{{> editor/editorFooter}}

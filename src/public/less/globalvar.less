@@ -1,0 +1,211 @@
+/* Hipster */
+//Lavander #AC92EC   #967ADC
+/*
+@base : #4FC1E9;
+@baseDark : #3BAFDA;
+
+@secondBase : #FC6E51;
+@secondBaseDark: #E9573F;
+
+@baseInputColor : @secondBase;
+@baseInputDarkColor : @secondBaseDark;
+
+@warningInputColor : @secondBase;
+@warningInputDarkColor : @secondBaseDark;
+
+@successGreen : #ADD468;
+@successGreenAlternative : #BCC152;
+
+@baseFontColor : #999;
+@background : #f6f6f6;
+*/
+/* Under sea */
+
+@base : #8dbae3;
+@baseDark : lighten(#337ab7, 12%);
+
+
+@secondBase : #c73935;
+@secondBaseDark: darken(@secondBase, 15%);
+
+@baseInputColor : @secondBase;
+@baseInputDarkColor : @secondBaseDark;
+
+@warningInputColor : @secondBase;
+@warningInputDarkColor : @secondBaseDark;
+
+@successGreen : #91c46b;/*#27ae60;*/
+@successGreenHover : #57893e;/*#27ae60;*/
+@successGreenAlternative : #1fda9a;
+
+@baseFontColor : #666;
+@background : #f6f6f6;
+
+  /* 1.1 Top Header Dashboard */
+@topHeaderDashboardBackground : #34383c;
+@topHeaderDashboardFont : #8a949f;
+@topHeaderDashboardFontHover : #cdd4dc;
+
+@topHeaderDashboardBackgroundDark : #1e2226;
+@topHeaderDashboardFontDark : #939aa2;
+
+/* Paw Studio */
+/*
+@base : #92dce0;
+@baseDark : darken(@base, 15%);
+
+@secondBase : #ef9950;
+@secondBaseDark: darken(@secondBase, 15%);
+
+@baseInputColor : @secondBase;
+@baseInputDarkColor : @secondBaseDark;
+
+@warningInputColor : @secondBase;
+@warningInputDarkColor : @secondBaseDark;
+
+@successGreen : #27ae60;
+@successGreenAlternative : #1fda9a;
+
+@baseFontColor : #999;
+@background : #f6f6f6;
+*/
+/* Mohiuddin Parekh */
+/*
+@base : #59c8df;
+@baseDark : darken(@base, 15%);
+
+@secondBase : #d14d28;
+@secondBaseDark: darken(@secondBase, 15%);
+
+@baseInputColor : @secondBase;
+@baseInputDarkColor : @secondBaseDark;
+
+@warningInputColor : @secondBase;
+@warningInputDarkColor : @secondBaseDark;
+
+@successGreen : #27ae60;
+@successGreenAlternative : #1fda9a;
+
+@baseFontColor : #999;
+@background : #f6f6f6;
+*/
+
+
+/* Invira */
+/*
+@base : #8dbae3;
+@baseDark : darken(@base, 15%);
+
+@secondBase : #ffad98;
+@secondBaseDark: darken(@secondBase, 15%);
+
+@baseInputColor : @secondBase;
+@baseInputDarkColor : @secondBaseDark;
+
+@warningInputColor : @secondBase;
+@warningInputDarkColor : @secondBaseDark;
+
+@successGreen : #27ae60;
+@successGreenAlternative : #1fda9a;
+
+@baseFontColor : #999;
+@background : #f6f6f6;
+*/
+/* Under see 2*/
+/*
+@base : #7fd8c2;
+@baseDark : darken(@base, 10%);
+
+@secondBase : #a53239;
+@secondBaseDark: darken(@secondBase, 10%);
+
+@baseInputColor : @secondBase;
+@baseInputDarkColor : @secondBaseDark;
+
+@warningInputColor : @secondBase;
+@warningInputDarkColor : @secondBaseDark;
+
+@baseFontColor : #999;
+@background : #f6f6f6;
+*/
+
+/* CampFire Color 1*/
+/*
+@base : #8c4646;
+@baseDark : darken(@base, 10%);
+
+@secondBase : #f2ae72;
+@secondBaseDark: darken(@secondBase, 10%);
+
+@baseInputColor : @secondBase;
+@baseInputDarkColor : @secondBaseDark;
+
+@warningInputColor : @secondBase;
+@warningInputDarkColor : @secondBaseDark;
+
+@successGreen : #27ae60;
+@successGreenAlternative : #1fda9a;
+
+@baseFontColor : #999;
+@background : #f6f6f6;
+*/
+
+/* CampFire Color 2*/
+/*
+@base : #58788d;
+@baseDark : darken(@base, 10%);
+
+@secondBase : #c73935;
+@secondBaseDark: darken(@secondBase, 10%);
+
+@baseInputColor : @secondBase;
+@baseInputDarkColor : @secondBaseDark;
+
+@warningInputColor : @secondBase;
+@warningInputDarkColor : @secondBaseDark;
+
+@baseFontColor : #999;
+*/
+
+.transition (@transition) {
+  -webkit-transition: @transition;
+  -moz-transition:    @transition;
+  -ms-transition:     @transition;
+  -o-transition:      @transition;
+}
+
+.InviraShadow(@level: 1) {
+  & when (@level = 1) {
+    box-shadow: 0 2px 0 rgba(204, 204, 204, 0.15);
+  }
+  & when (@level = 4) {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05), 0 3px 10px rgba(0, 0, 0, 0.05);
+  }
+}
+
+
+.MaterialShadow(@level: 1){
+  & when (@level = 1) {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  & when (@level = 2) {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+  & when (@level = 3) {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  & when (@level = 4) {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  & when (@level = 5) {
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  }
+}
+
+.SmoothShadow(@level: 1){
+  & when (@level = 1) {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05), 0 3px 10px rgba(0, 0, 0, 0.05);
+  }
+}
+
+@import 'global-styles.less';

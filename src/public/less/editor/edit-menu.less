@@ -1,0 +1,211 @@
+@import 'var.less';
+
+
+html.decks.edit .toolbars {
+  position: absolute;
+  top: 57px;
+  left: 70px;
+  width: 170px;
+  height: 100%;
+  z-index: 101;
+  background-color: #FAFAFA;
+  border-right: 1px solid rgba(0,0,0,.05);
+  border-left: 1px solid rgba(0,0,0,.05);
+  visibility: hidden;
+
+
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+
+}
+
+html.decks.edit .toolbars.visible {
+  visibility: visible;
+}
+
+
+html.decks.edit .sidebar {
+  position: absolute;
+  width: 85px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  padding: 0;
+  z-index: 100;
+  font-size: 17px;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+
+  overflow: hidden !important;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+html.decks.edit #invira-menu .arrow-left {
+  top: 153px;
+}
+
+html.decks.edit .toolbars .toolbars-inner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0px;
+  left: 0;
+  overflow: hidden;
+  text-align: left;
+  color: #fff;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+html.decks.edit .toolbars .toolbars-scroller {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  vertical-align: top;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+}
+
+html.decks.edit .toolbars .toolbar {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+  font-size: 14px;
+  color: #fff;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+}
+
+html.decks.edit .toolbars .toolbar.visible {
+  opacity: 1;
+}
+
+html.decks.edit .toolbars .toolbar .toolbar-list {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0px;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+html.decks.edit .toolbars .toolbar-add-block-option {
+  width: 100%;
+  margin: 0px 0px;
+  padding: 21px 0px;
+  text-align: center;
+  color: @baseFontColor;
+  /* border-left: 5px solid #FAFAFA;*/
+  cursor: pointer;
+  font-size: 12px;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+html.decks.edit .toolbars .toolbar-add-block-option:hover {
+  background-color: #EFEFEF;
+  /*border-left: 5px solid @base;*/
+  color: #111;
+
+}
+
+
+html.decks.edit .toolbars .toolbar-add-block-option .toolbar-add-block-option-icon {
+  display: block;
+  font-size: 2em;
+  pointer-events: none;
+}
+
+
+html.decks.edit .toolbars .toolbar-add-block-option .toolbar-add-block-option-label {
+  display: block;
+  font-size: 1em;
+  margin-top: 1.5em;
+  pointer-events: none;
+}
+
+
+html.decks.edit .toolbars .toolbar[data-type="text"], html.decks.edit .toolbars .toolbar[data-type="code"] {
+  width: 100%;
+  color: @baseFontColor;
+}
+html.decks.edit .toolbars .toolbar-container {
+  padding: 13px;
+}
+
+
+html.decks.edit .toolbars .toolbars-actionbar {
+  position: relative;
+  height: 34px;
+  width: 86%;
+  width: 86%;
+  left: 0;
+  top: 0;
+  padding: 7px 12px;
+  background: #FFF;
+  border-bottom: 1px solid rgba(0,0,0,.05);
+  text-align: center;
+}
+
+/* GLOBAL EDIT MENU */
+
+html.decks.edit .toolbars .toolbar-option {
+  display: block;
+  position: relative;
+  height: auto;
+  margin-bottom: 15px;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-touch-callout: none;
+}
+
+html.decks.edit .toolbars .toolbar-option .toolbar-option-label {
+  position: relative;
+  margin-bottom: 6px;
+  font-size: 11px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: @baseFontColor;
+  cursor: default;
+}
+
+html.decks.edit .toolbars .toolbar-text .toolbar-text-input {
+  font-size: 13px;
+  font-family: 'Raleway', sans-serif;
+  font-smooth: auto;
+  font-weight: 400;
+
+  width: 93%;
+  max-width: 100%;
+  height: 70px;
+  background: #FFF;
+  border-radius: 6px;
+
+  -webkit-box-shadow: 0 3px 0 @editToolbarBaseDarkColor, 0 -1px @editToolbarBaseColor inset;
+  -moz-box-shadow: 0 3px 0 @editToolbarBaseDarkColor, 0 -1px @editToolbarBaseColor inset;
+  box-shadow: 0 3px 0 @editToolbarBaseDarkColor, 0 -1px @editToolbarBaseColor inset;
+
+  border: 1px solid @editToolbarBorderColor;
+  color: @baseFontColor;
+  -webkit-appearance: none;
+  resize: none;
+}
+
+html.decks.edit .toolbars .toolbar-text .toolbar-text-input:focus, html.decks.edit .toolbars .toolbar-text textarea:focus {
+  outline: darken(@editToolbarBorderColor, 20%) auto 1px;
+}

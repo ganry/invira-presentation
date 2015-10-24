@@ -1,0 +1,432 @@
+@import 'var.less';
+
+/* CUSTOM COLOR */
+.custom-color {
+  color: @base;
+}
+
+.custom-color:hover {
+  color: darken(@base, 5%);
+}
+
+.custom-color-back {
+  background: @base;
+}
+
+.custom-color-back:hover {
+  background: darken(@base, 5%);
+}
+
+a:focus, a:hover {
+  color: darken(@base, 5%);
+  text-decoration: underline;
+}
+
+
+/* /.CUSTOM COLOR */
+/* Body */
+body.login {
+  background: #f0f0f0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #666666; }
+
+.in-forms {
+  /* Basics */
+  /* Logo */
+  /* Buttons */
+  /* Form base */ }
+.in-forms .col-xs-1, .in-forms .col-sm-1, .in-forms .col-md-1, .in-forms .col-lg-1, .in-forms .col-xs-2, .in-forms .col-sm-2, .in-forms .col-md-2, .in-forms .col-lg-2, .in-forms .col-xs-3, .in-forms .col-sm-3, .in-forms .col-md-3, .in-forms .col-lg-3, .in-forms .col-xs-4, .in-forms .col-sm-4, .in-forms .col-md-4, .in-forms .col-lg-4, .in-forms .col-xs-5, .in-forms .col-sm-5, .in-forms .col-md-5, .in-forms .col-lg-5, .in-forms .col-xs-6, .in-forms .col-sm-6, .in-forms .col-md-6, .in-forms .col-lg-6, .in-forms .col-xs-7, .in-forms .col-sm-7, .in-forms .col-md-7, .in-forms .col-lg-7, .in-forms .col-xs-8, .in-forms .col-sm-8, .in-forms .col-md-8, .in-forms .col-lg-8, .in-forms .col-xs-9, .in-forms .col-sm-9, .in-forms .col-md-9, .in-forms .col-lg-9, .in-forms .col-xs-10, .in-forms .col-sm-10, .in-forms .col-md-10, .in-forms .col-lg-10, .in-forms .col-xs-11, .in-forms .col-sm-11, .in-forms .col-md-11, .in-forms .col-lg-11, .in-forms .col-xs-12, .in-forms .col-sm-12, .in-forms .col-md-12, .in-forms .col-lg-12 {
+  padding: 0px;
+}
+.in-forms .row {
+  margin: 0px;
+}
+
+.in-forms a {
+  transition: color 0.5s ease;
+}
+.in-forms .logo {
+  margin: 10px 0px 30px 0px;
+}
+.in-forms .logo img {
+  margin: 0 auto;
+}
+.in-forms .btn {
+  border: 0px;
+  color: #fff;
+}
+.in-forms .primary {
+  padding: 11px 30px 11px 30px;
+  font-size: 18px;
+  transition: background 0.5s ease;
+}
+
+.in-forms .primary:hover {
+  color: #fff;
+}
+
+.in-forms .social {
+  padding: 11px 22px 11px 22px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  transition: background 0.5s ease;
+  color: #fff;
+}
+
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+  outline: none;
+}
+
+
+/* Social icons */
+
+.in-forms .social .social-icon {
+  margin-right: 10px;
+  font-size: 18px;
+  margin-top: 1px;
+  float: left;
+}
+
+.in-forms .social-facebook {
+  background: #4695df;
+  width: 100%;
+}
+
+.in-forms .social-facebook:hover {
+  background: #247cce;
+  color: #fff;
+}
+
+.in-forms .social-google-plus {
+  background: #dd4b39;
+  width: 100%;
+}
+
+.in-forms .social-google-plus:hover {
+  background: darken(#dd4b39, 5%);
+  color: #fff;
+}
+
+.in-forms .social-twitter {
+  background: #28c4ff;
+  width: 100%;
+}
+
+.in-forms .social-twitter:hover {
+  background: #00b1f4;
+  color: #fff;
+}
+
+span.social-icon, span.icon-close, span.icon-check {
+  font-family: 'FontAwesome';
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+.icon-social-facebook:before {
+  content: "\f082";
+}
+
+.icon-social-twitter:before {
+  content: "\f081";
+}
+
+.icon-social-google-plus:before {
+  content: "\f0d4";
+}
+
+.icon-close:before {
+  content: "\f071";
+}
+
+.icon-check:before {
+  content: "\f00c";
+}
+
+
+
+.in-forms .form-base {
+  background: white;
+}
+
+.in-forms .form-base header {
+  padding: 30px;
+  border-bottom: 1px solid #eee;
+}
+
+.in-forms .form-base header h1 {
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.in-forms .form-base section {
+  padding: 30px;
+}
+
+.in-forms .form-base section form input[type="text"],
+.in-forms .form-base section form input[type="password"],
+.in-forms .form-base section form input[type="email"] {
+  width: 100%;
+  border: 1px solid #eee;
+}
+
+.in-forms .form-base section form input[type="text"]:focus,
+.in-forms .form-base section form input[type="password"]:focus,
+.in-forms .form-base section form input[type="email"]:focus {
+  border: 1px solid @base;
+}
+
+.in-forms .form-base section form input[type="checkbox"]  {
+  margin-top: 19px;
+}
+
+.in-forms .form-base section form .checkbox-custom {
+  float: left;
+}
+
+.in-forms .form-base section form .checkbox-custom .toggle {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+
+.in-forms .form-base section form .checkbox-custom .toggle + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+}
+
+.in-forms .form-base section form .checkbox-custom input.toggle-round + label {
+  padding: 2px;
+  width: 40px;
+  height: 22px;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
+  margin-left: 0px;
+}
+
+.in-forms .form-base section form .checkbox-custom input.toggle-round + label:before,
+.in-forms .form-base section form .checkbox-custom input.toggle-round + label:after {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  content: ""; }
+.in-forms .form-base section form .checkbox-custom input.toggle-round + label:before {
+  right: 1px;
+  background-color: #eee;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
+  transition: background 0.4s;
+}
+
+.in-forms .form-base section form .checkbox-custom input.toggle-round + label:after {
+  width: 20px;
+  background-color: #FCFCFC;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  box-shadow: 0 1px 0px rgba(0, 0, 0, 0.05);
+  transition: margin 0.4s;
+}
+
+.in-forms .form-base section form .checkbox-custom input.toggle-round:checked + label:before {
+  background-color: #e87d3c;
+}
+
+.in-forms .form-base section form .checkbox-custom input.toggle-round:checked + label:after {
+  margin-left: 18px;
+}
+
+.in-forms .form-base section form label {
+  font-weight: 300;
+  margin-top: 14px;
+  margin-left: 10px;
+}
+
+.in-forms .form-base section form input {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  padding: 13px 20px 13px 20px;
+}
+
+.in-forms .form-base section form .input-group {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.in-forms .form-base section form .input-group .input-group-addon {
+  display: none;
+  width: 110px;
+  background: #eee;
+  color: #666;
+  border: 0px;
+}
+
+.in-forms .form-base section form .input-group .status-icon {
+  position: absolute;
+  top: 15px;
+  right: 14px;
+  font-size: 18px;
+}
+
+.in-forms .form-base section form .input-group .icon-close {
+  color: #e08691;
+}
+
+.in-forms .form-base section form .input-group .icon-check {
+  color: #8ce196;
+}
+
+.in-forms .form-base section form .input-group .icon-question {
+  color: @baseFontColor;
+  font-family: 'FontAwesome';
+}
+
+.icon-question:before {
+  content: "\f059";
+}
+
+.in-forms .form-base section form .input-group .error-input {
+  background-color: #f5eaec;
+  border: 1px solid #e08691;
+}
+
+.in-forms .form-base section form .error-placeholder ::-webkit-input-placeholder {
+  color: #e08691;
+}
+
+.in-forms .form-base section form .error-placeholder :-moz-placeholder {
+  /* Firefox 18- */
+  color: #e08691;
+}
+
+.in-forms .form-base section form .error-placeholder ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #e08691;
+}
+
+.in-forms .form-base section form .error-placeholder :-ms-input-placeholder {
+  color: #e08691;
+}
+
+.in-forms .form-base section form .section-action {
+  margin-top: 20px;
+}
+
+.in-forms .form-base section form .section-action .forgotten-password-trigger {
+  margin-top: 15px;
+  float: left;
+  cursor: pointer;
+}
+
+.in-forms .form-base section .input-group, .in-forms .form-base section .input-group {
+  width: 100%;
+}
+
+.in-forms .form-base .forgotten-password {
+  display: none;
+  background: #eee;
+}
+
+.in-forms .form-base .forgotten-password input {
+  margin-bottom: 30px;
+}
+
+.in-forms .form-base .forgotten-password p {
+  margin-top: 10px;
+  float: left;
+}
+
+.in-forms .form-base .forgotten-password .input-group {
+  float: left;
+}
+
+.in-forms .form-base .forgotten-password-sent {
+  background: #e87d3c;
+  color: #fff;
+}
+
+.in-forms .account-switch {
+  margin: 40px 0px 40px 0px;
+}
+
+.in-forms .modal {
+  color: #666666;
+}
+
+:focus {
+  outline: none;
+}
+
+/* Media queries */
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+  .in-forms {
+    /* Buttons */ }
+  .in-forms .social-facebook {
+    width: 210px;
+  }
+
+  .in-forms .social-twitter {
+    width: 200px;
+  }
+
+  .in-forms .only-facebook, .in-forms .only-twitter {
+    width: 100% !important;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+  .in-forms {
+    /* Buttons */
+  }
+  .in-forms .social-facebook {
+    width: 205px;
+  }
+  .in-forms .social-twitter {
+    width: 195px;
+  }
+  .in-forms .only-facebook, .in-forms .only-twitter {
+    width: 100% !important;
+  }
+}
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+  .in-forms {
+    /* Buttons */
+  }
+
+  .in-forms .social-facebook {
+    width: 165px;
+  }
+
+  .in-forms .social-twitter {
+    width: 145px;
+  }
+
+  .in-forms .only-facebook, .in-forms .only-twitter {
+    width: 100% !important;
+  }
+}

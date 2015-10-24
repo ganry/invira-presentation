@@ -1,0 +1,506 @@
+@import 'var.less';
+
+
+a:hover {
+  color: @base;
+  text-decoration: underline;
+}
+a:visited {
+  color: @baseDark;
+}
+
+a {
+  cursor: pointer;
+  color: @base;
+  text-decoration: none;
+}
+
+
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+.invira .invira-widget {
+  display: block;
+  position: absolute;
+  z-index: auto;
+}
+
+.invira .slides section .fragment {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+html.decks.edit.is-editing .slides.error {
+  border-color: red;
+}
+
+html.decks.edit.is-editing .slides {
+  content: '';
+  display: block;
+  border: 1px dashed rgba(150,150,150,0.5);
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 10%;
+  top: 0px;
+  margin: auto;
+}
+
+html.decks.edit.is-editing[data-deck-contrast="white"] .invira .slides > section:not(.stack):before {
+  border-color: rgba(255,255,255,0.05);
+}
+
+html.decks.edit.is-editing[data-deck-contrast="black"] .invira .slides > section:not(.stack):before {
+  border-color: rgba(255,255,255,0.9);
+}
+
+html.decks.edit .projector {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+html.decks.edit .projector .invira-viewport {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+html.decks.edit .page-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding-left: 85px;
+}
+
+
+
+/* EDIT */
+
+.invira-widget-selection {
+  position:absolute;
+  z-index:255;
+
+  background: @selectionColor;
+  border:1px solid @selectionBorderColor;
+}
+
+html.decks.edit body {
+  height: 100%;
+  min-width: 1220px;
+  font-size: 16px;
+  overflow: hidden;
+  background: #fff;
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  /*font-family: Roboto,sans-serif;*/
+  /*font-family: 'Ubuntu', sans-serif;*/
+  font-smooth: auto;
+  font-weight: 400;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+body {
+  position: relative;
+  line-height: 1;
+  background-color: #fff;
+  color: #111;
+}
+
+html.decks.edit .projector .invira-viewport .invira {
+  position: relative;
+  z-index: 10;
+}
+
+.invira {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -ms-touch-action: none;
+  touch-action: none;
+}
+
+/* GUIDES */
+.invira-widget-guides {
+  position:absolute;
+  width:100%;
+  height:100%;
+  left:0;
+  top:0;
+  z-index:255;
+}
+
+html.decks.edit .invira-widget-guides .guide-h,html.decks.edit .invira-widget-guides .guide-v {
+  position:absolute;
+  background:#dcdc00;
+  opacity:0.5;
+  -webkit-transition:opacity .15s ease;
+  transition:opacity .15s ease;
+}
+
+html.decks.edit .invira-widget-guides .guide-h.show,html.decks.edit .invira-widget-guides .guide-v.show {
+  opacity:1;
+}
+
+html.decks.edit .invira-widget-guides .guide-h:before,html.decks.edit .invira-widget-guides .guide-h:after,html.decks.edit .invira-widget-guides .guide-v:before,html.decks.edit .invira-widget-guides .guide-v:after {
+  content:'';
+  display:block;
+  position:absolute;
+  width:5px;
+  height:5px;
+  background:#dcdc00;
+  border-radius:5px;
+}
+
+html.decks.edit .invira-widget-guides .guide-h {
+  left:0;
+  height:1px;
+  width:100%;
+}
+
+html.decks.edit .invira-widget-guides .guide-h:after {
+  right:-2.5px;
+  top:-2.5px;
+}
+
+html.decks.edit .invira-widget-guides .guide-v {
+  top:0;
+  height:100%;
+  width:1px;
+}
+
+html.decks.edit .invira-widget-guides .guide-v:after {
+  left:-2.5px;
+  bottom:-2.5px;
+}
+
+/* ANCHOR */
+
+/* N */
+html.decks.edit.is-editing .invira .invira-widget .invira-widget-transform .anchor[data-direction=n] {
+  left: 50%;
+  bottom: 100%;
+  margin-left: -0.5em;
+  margin-bottom: -0.4em;
+  cursor: row-resize;
+}
+
+/* E */
+html.decks.edit.is-editing .invira .invira-widget .invira-widget-transform .anchor[data-direction=e] {
+  left: 100%;
+  top: 50%;
+  margin-top: -0.5em;
+  margin-left: -0.6em;
+  cursor: col-resize;
+}
+
+/* S */
+html.decks.edit.is-editing .invira .invira-widget .invira-widget-transform .anchor[data-direction=s] {
+  left: 50%;
+  top: 100%;
+  margin-left: -0.5em;
+  margin-top: -0.4em;
+  cursor: row-resize;
+}
+
+/* W */
+html.decks.edit.is-editing .invira .invira-widget .invira-widget-transform .anchor[data-direction=w] {
+  right: 100%;
+  top: 50%;
+  margin-top: -0.5em;
+  margin-right: -0.6em;
+  cursor: col-resize;
+}
+
+/* NW */
+html.decks.edit.is-editing .invira .invira-widget .invira-widget-transform .anchor[data-direction=nw] {
+  right: 100%;
+  bottom: 100%;
+  margin-right: -0.55em;
+  margin-bottom: -0.4em;
+  cursor: nw-resize;
+}
+
+/* NE */
+html.decks.edit.is-editing .invira .invira-widget .invira-widget-transform .anchor[data-direction=ne] {
+  left: 100%;
+  bottom: 100%;
+  margin-left: -0.55em;
+  margin-bottom: -0.4em;
+  cursor: ne-resize;
+}
+
+/* SE */
+html.decks.edit.is-editing .invira .invira-widget .invira-widget-transform .anchor[data-direction=se] {
+  left: 100%;
+  top: 100%;
+  margin-left: -0.55em;
+  margin-top: -0.4em;
+  cursor: se-resize;
+}
+
+/* SW */
+html.decks.edit.is-editing .invira .invira-widget .invira-widget-transform .anchor[data-direction=sw] {
+  right: 100%;
+  top: 100%;
+  margin-right: -0.55em;
+  margin-top: -0.4em;
+  cursor: sw-resize;
+}
+
+
+
+
+html.decks.edit.is-editing .invira .invira-widget .invira-widget-transform[data-vertical="false"] .anchor[data-direction=n], html.decks.edit.is-editing .invira .invira-widget .invira-widget-transform[data-vertical="false"] .anchor[data-direction=s], html.decks.edit.is-editing .invira .invira-widget .invira-widget-transform[data-vertical="false"] .anchor[data-direction=nw], html.decks.edit.is-editing .invira .invira-widget .invira-widget-transform[data-vertical="false"] .anchor[data-direction=ne], html.decks.edit.is-editing .invira .invira-widget .invira-widget-transform[data-vertical="false"] .anchor[data-direction=se], html.decks.edit.is-editing .invira .invira-widget .invira-widget-transform[data-vertical="false"] .anchor[data-direction=sw] {
+  display: none;
+}
+
+html.decks.edit.is-editing .invira .invira-widget .invira-widget-transform .anchor {
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  background: fade(@focusColor, 90%);
+  border: 1px solid @focusColor-dark;
+  cursor: pointer;
+  border-radius: 50%;
+  pointer-events: all;
+  visibility: hidden;
+}
+
+html.decks.edit.is-editing .invira .invira-widget .invira-widget-transform.visible .anchor {
+  visibility: visible;
+}
+
+html.decks.edit.is-editing .invira .invira-widget .invira-widget-content {
+  cursor: pointer;
+}
+
+.invira .slides section .fragment.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.invira .slides section .fragment {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+html.decks.edit:not([data-mode=preview]) .invira .fragment {
+  visibility: visible;
+  opacity: 0.7;
+}
+
+.invira .invira-widget .invira-widget-content {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  outline: 0;
+  word-wrap: break-word;
+}
+
+html.decks.edit.is-editing .invira .invira-widget .invira-widget-transform.visible {
+  visibility: visible;
+}
+
+html.decks.edit.is-editing .invira .invira-widget .invira-widget-transform {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  visibility: hidden;
+  z-index: 255;
+  pointer-events: none;
+  border: 1px solid @focusColor;
+  font-size: 12px;
+}
+
+
+
+html.decks.edit .projector .add-horizontal-slide, html.decks.edit .projector .add-vertical-slide {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  z-index: 10;
+  opacity: 0;
+  cursor: pointer;
+  background: fade(@baseInputColor, 100%);
+  border-radius: 50%;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+html.decks.edit .projector .add-vertical-slide {
+  bottom: -60px;
+  left: 54%;
+}
+
+html.decks.edit .projector .add-horizontal-slide {
+  position: fixed;
+  right: -60px;
+  top: 50%;
+  margin-top: -23px;
+}
+
+html.decks.edit .projector .add-horizontal-slide.show {
+  opacity: 0.3;
+  right: 10px;
+}
+
+html.decks.edit .projector .add-vertical-slide.show {
+  opacity: 0.3;
+  bottom: 10px;
+}
+
+html.decks.edit .projector .add-horizontal-slide.show:hover, html.decks.edit .projector .add-vertical-slide.show:hover {
+  opacity: 1;
+  background: fade(@baseInputColor, 50%);
+}
+
+html.decks.edit .projector .add-horizontal-slide .icon, html.decks.edit .projector .add-vertical-slide .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 24px;
+  margin-left: -9px;
+  margin-top: -12px;
+  color: white;
+}
+
+.icon {
+  display: inline-block;
+  line-height: 1;
+}
+
+html.decks.edit.is-editing .invira .invira-widget.is-editing, html.decks.edit.is-editing .invira .invira-widget.is-editing .invira-widget-content {
+  cursor: auto;
+}
+
+.invira .invira-widget[data-widget-type="code"] .invira-widget-content pre {
+  font-size: 0.55em;
+}
+.invira .invira-widget[data-widget-type="code"] .invira-widget-content pre, .invira .invira-widget[data-widget-type="code"] .invira-widget-content code {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.invira .invira-widget .invira-widget-content>:first-child {
+  margin-top: 0;
+}
+
+/* preloader */
+
+.preload-wrapper{
+  background-color: #ECF0F1;
+  z-index: 999;
+  width:100%;
+  height:100%;
+  position:absolute;
+}
+
+
+#preloader_3{
+  top:50%;
+  left:50%;
+  margin-left:-27px;
+  margin-top:-10px;
+  position:relative;
+}
+#preloader_3:before{
+  width:20px;
+  height:20px;
+  border-radius:20px;
+  background:blue;
+  content:'';
+  position:absolute;
+  background:@secondBase;
+  -webkit-animation: preloader_3_before 1.5s infinite ease-in-out;
+  -moz-animation: preloader_3_before 1.5s infinite ease-in-out;
+  -ms-animation: preloader_3_before 1.5s infinite ease-in-out;
+  animation: preloader_3_before 1.5s infinite ease-in-out;
+}
+
+#preloader_3:after{
+  width:20px;
+  height:20px;
+  border-radius:20px;
+  background:blue;
+  content:'';
+  position:absolute;
+  background:@base;
+  left:22px;
+  -webkit-animation: preloader_3_after 1.5s infinite ease-in-out;
+  -moz-animation: preloader_3_after 1.5s infinite ease-in-out;
+  -ms-animation: preloader_3_after 1.5s infinite ease-in-out;
+  animation: preloader_3_after 1.5s infinite ease-in-out;
+}
+
+@-webkit-keyframes preloader_3_before {
+  0% {-webkit-transform: translateX(0px) rotate(0deg)}
+  50% {-webkit-transform: translateX(50px) scale(1.2) rotate(260deg); background:@base;border-radius:0px;}
+  100% {-webkit-transform: translateX(0px) rotate(0deg)}
+}
+@-webkit-keyframes preloader_3_after {
+  0% {-webkit-transform: translateX(0px)}
+  50% {-webkit-transform: translateX(-50px) scale(1.2) rotate(-260deg);background:@secondBase;border-radius:0px;}
+  100% {-webkit-transform: translateX(0px)}
+}
+
+@-moz-keyframes preloader_3_before {
+  0% {-moz-transform: translateX(0px) rotate(0deg)}
+  50% {-moz-transform: translateX(50px) scale(1.2) rotate(260deg); background:@base;border-radius:0px;}
+  100% {-moz-transform: translateX(0px) rotate(0deg)}
+}
+@-moz-keyframes preloader_3_after {
+  0% {-moz-transform: translateX(0px)}
+  50% {-moz-transform: translateX(-50px) scale(1.2) rotate(-260deg);background:@secondBase;border-radius:0px;}
+  100% {-moz-transform: translateX(0px)}
+}
+
+
+@-ms-keyframes preloader_3_before {
+  0% {-ms-transform: translateX(0px) rotate(0deg)}
+  50% {-ms-transform: translateX(50px) scale(1.2) rotate(260deg); background:@base;border-radius:0px;}
+  100% {-ms-transform: translateX(0px) rotate(0deg)}
+}
+@-ms-keyframes preloader_3_after {
+  0% {-ms-transform: translateX(0px)}
+  50% {-ms-transform: translateX(-50px) scale(1.2) rotate(-260deg);background:@secondBase;border-radius:0px;}
+  100% {-ms-transform: translateX(0px)}
+}
+
+@keyframes preloader_3_before {
+  0% {transform: translateX(0px) rotate(0deg)}
+  50% {transform: translateX(50px) scale(1.2) rotate(260deg); background:@base;border-radius:0px;}
+  100% {transform: translateX(0px) rotate(0deg)}
+}
+@keyframes preloader_3_after {
+  0% {transform: translateX(0px)}
+  50% {transform: translateX(-50px) scale(1.2) rotate(-260deg);background:@secondBase;border-radius:0px;}
+  100% {transform: translateX(0px)}
+}

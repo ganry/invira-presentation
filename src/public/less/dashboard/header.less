@@ -1,0 +1,36 @@
+@import 'var.less';
+
+/* Second Header */
+.second-header {
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+}
+
+.second-header .second-header-inner h3 {
+  color: @baseFontColor;
+  margin-left: 15px;
+  font-size: 20px;
+  margin-top: 17px;
+  margin-bottom: 15px;
+  font-weight: 300;
+}
+.second-header-inner {
+  position: relative;
+  width: 100%;
+  padding: 7px;
+  background: #ffffff;
+  .InviraShadow(1);
+  min-height: 70px;
+}
+
+.second-header-inner.second-header-shrink {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+  color: @baseFontColor;
+  height: 70px;
+
+  .InviraShadow(1);
+}

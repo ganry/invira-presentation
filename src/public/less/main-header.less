@@ -1,0 +1,349 @@
+@import 'globalvar.less';
+
+/* HEADER BEGIN */
+
+.main-header nav {
+  line-height: 55px;
+  display: block;
+  float: right;
+}
+
+.main-header nav a {
+  font-size: 14px;
+  margin-left: 12px;
+  font-family: 'Open Sans','Proxima Nova','Helvetica Neue',Helvetica,Arial;
+  color: @baseFontColor;
+  padding-bottom: 1px;
+  text-decoration: none;
+}
+
+.main-header nav a.buttonized.grey {
+  border: 1px solid fade(#999, 50%);
+}
+.main-header nav a.buttonized {
+  padding: 7px 13px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -ms-border-radius: 4px;
+  white-space: nowrap;
+  margin-left: 21px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.main-header #invira-logo {
+  margin: 0 14px 0 0;
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  position: static;
+  display: block;
+  float: left;
+}
+
+.main-header #invira-logo cite {
+  background-image: url("../../images/landing/logo-dark.png");
+  width: 205px;
+  height: 48px;
+  margin: 0;
+  display: block;
+}
+
+.main-header {
+  margin: 0;
+  width: 100%;
+  height: 57px;
+  overflow: visible;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -ms-box-shadow: none;
+  top: 0px;
+  left: 50%;
+  position: fixed;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  z-index: 15;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+
+  background-color: #34383c;
+  color: #8a949f;
+}
+
+.inner-header div {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.inner-header .invira-menu-icon {
+  background: @topHeaderDashboardBackgroundDark url('../../images/invira-menu-icon.png');
+  min-height: 56px;
+  max-width: 70px;
+  min-width: 70px;
+}
+
+.main-header.main-header-shrink {
+  .transition(all 0.3s);
+  position: fixed;
+  top: 0px;
+  max-width: none;
+  height: 80px;
+}
+
+.dashboard.actionbar {
+  margin-left: 21px;
+}
+
+/*
+.main-header.main-header-shrink #invira-logo cite {
+  background-image: url("../../images/landing/logo-dark.png");
+}
+*/
+
+.main-header.main-header-shrink nav a.buttonized.white {
+  border: 1px solid fade(@baseFontColor, 50%);
+}
+
+.main-header.main-header-shrink nav a {
+  color: @baseFontColor;
+}
+
+.main-header.main-header-shrink {
+  background-color: #FFF;
+  color: @baseFontColor;
+  padding-top: 9px;
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 70px;
+
+  .InviraShadow(1);
+}
+
+/* User Menu */
+
+.user-right-menu {
+  float: right;
+  cursor: pointer;
+  z-index: 200;
+}
+
+.user-right-menu .user-menu-wrapper div {
+  display: inline-block;
+  vertical-align: middle;
+
+}
+
+
+.user-right-menu .user-menu-wrapper {
+  color: @topHeaderDashboardFont;
+  /*border: 1px solid rgba(0, 0, 0, 0.05);*/
+  text-align: center;
+  padding: 12.3px;
+  .transition(all 0.1s ease-in-out);
+  font-size: 14px;
+}
+
+.user-right-menu .user-menu-wrapper:hover {
+  color: @topHeaderDashboardFontDark;
+  background: @topHeaderDashboardBackgroundDark;
+}
+
+.user-right-menu .user-menu-wrapper.active {
+  color: @topHeaderDashboardFontDark;
+  background: @topHeaderDashboardBackgroundDark;
+  .InviraShadow(1);
+}
+
+.user-right-menu .user-menu-wrapper .usericon img {
+  border-radius: 50%;
+  max-width: 32px;
+  float: right;
+  margin-left: 8px;
+}
+
+.user-right-menu .search-wrapper {
+  margin-right: 25px;
+  min-width: 250px;
+  max-width: 250px;
+}
+
+/* search input */
+.sb-search {
+  position: relative;
+  /* margin-top: 10px; */
+  width: 0%;
+  min-width: 60px;
+  height: 36px;
+  float: right;
+  overflow: hidden;
+  -webkit-transition: width 0.3s;
+  -moz-transition: width 0.3s;
+  transition: width 0.3s;
+  -webkit-backface-visibility: hidden;
+}
+
+.sb-search-input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  outline: none;
+  background: #4b5056;
+  width: 100%;
+  height: 48px;
+  margin: 0;
+  z-index: 10;
+  padding: 19px 21px 29px 20px;
+  font-family: inherit;
+  font-size: 14px;
+  color: #6c757e;
+}
+
+input[type="search"].sb-search-input {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+}
+
+.sb-search-input::-webkit-input-placeholder {
+  color: #6c757e;
+}
+
+.sb-search-input:-moz-placeholder {
+  color: #6c757e;
+}
+
+.sb-search-input::-moz-placeholder {
+  color: #6c757e;
+}
+
+.sb-search-input:-ms-input-placeholder {
+  color: #6c757e;
+}
+
+.sb-icon-search,
+.sb-search-submit  {
+  width: 60px;
+  height: 36px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  line-height: 36px;
+  text-align: center;
+  cursor: pointer;
+}
+.sb-search-submit {
+  background: #fff; /* IE needs this */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
+  filter: alpha(opacity=0); /* IE 5-7 */
+  opacity: 0;
+  color: transparent;
+  border: none;
+  outline: none;
+  z-index: -1;
+}
+
+.sb-icon-search {
+  color: #6c757e;
+  background: #4b5056;
+  z-index: 90;
+  font-size: 22px;
+  font-family: 'FontAwesome';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+.sb-icon-search:before {
+  content: "\f002";
+}
+
+.sb-search.sb-search-open,
+.no-js .sb-search {
+  width: 100%;
+}
+
+.sb-search.sb-search-open .sb-icon-search,
+.no-js .sb-search .sb-icon-search {
+  background: lighten(#4b5056, 10%);
+  color: lighten(#6c757e, 15%);
+  z-index: 11;
+}
+
+.sb-search.sb-search-open .sb-search-submit,
+.no-js .sb-search .sb-search-submit {
+  z-index: 90;
+}
+
+/* toggle-menu */
+
+
+.user-right-menu .toggle-menu-wrapper {
+  background: #1e2226;
+}
+
+.user-right-menu .toggle-menu-wrapper div {
+  display: block;
+}
+
+.user-right-menu .toggle-menu-wrapper .usericon {
+  padding: 10px;
+}
+
+
+.user-right-menu .toggle-menu-wrapper .usericon img {
+  border-radius: 50%;
+  max-width: 96px;
+  margin: auto;
+}
+
+.user-right-menu .toggle-menu-wrapper {
+  .transition(all 0.5s ease-in-out);
+  text-align: center;
+  padding: 0;
+  position: absolute;
+  top: 57px;
+  right: 0;
+}
+
+
+.user-right-menu .toggle-menu-wrapper .invira-btn {
+  margin: 0;
+  background: @topHeaderDashboardBackgroundDark;
+  color: @topHeaderDashboardFontDark;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: none;
+}
+
+.user-right-menu .toggle-menu-wrapper .invira-btn:hover {
+  margin: 0;
+  color: @topHeaderDashboardFont;
+  background: @topHeaderDashboardBackground ;
+  text-decoration: none;
+}
+
+
+.user-right-menu .toggle-menu-wrapper.closed {
+  display: none;
+}
+
+.user-right-menu .toggle-menu-wrapper.open {
+  display: block;
+  .InviraShadow(4);
+}

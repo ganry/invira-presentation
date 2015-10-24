@@ -1,0 +1,225 @@
+@import 'var.less';
+
+@font-face {
+  font-family: 'icomoon';
+  src:url('../../fonts/icomoon.eot?-2afq15');
+  src:url('../../fonts/icomoon.eot?#iefix-2afq15') format('embedded-opentype'),
+  url('../../fonts/icomoon.woff?-2afq15') format('woff'),
+  url('../../fonts/icomoon.ttf?-2afq15') format('truetype'),
+  url('../../fonts/icomoon.svg?-2afq15#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container-fluid.dashboard {
+  padding-top: 100px;
+  height: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+
+.dashboard .row .dashboard-project-bar {
+  float: right;
+  margin: 10px;
+}
+
+
+/* PROJECT */
+
+.project {
+  padding-bottom: 35px;
+  cursor: pointer;
+}
+
+.project-container {
+  .transition(all 0.18s);
+  .InviraShadow(1);
+}
+.project-container:hover {
+  .SmoothShadow(1);
+}
+
+.project .header-block {
+  height: 60px;
+  border-radius: 3px 3px 0 0;
+  color: #fff;
+  line-height: 0px;
+  padding: 23px 19px;
+  overflow: hidden;
+  position: relative;
+  background: #91c46b;
+}
+
+.project .header-block .icon-shadow {
+  position: absolute;
+  color: rgba(0, 0, 0, 0.05);
+  font-size: 9.25em;
+  top: -51px;
+  left: -12px;
+  /* right: -15px; */
+  -webkit-transform: rotate(-20deg);
+  font-family: 'FontAwesome';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-presentation:before {
+  content: "\f1c4";
+}
+
+.project .header-block h3 {
+  font-size: 17px;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 20px;
+  text-align: center;
+  font-weight: 300;
+  color: #FFF;
+}
+.project .content {
+  padding: 20px;
+  background-color: #FFFFFF;
+  border-bottom-left-radius: 10px;
+}
+
+.project.col-md-2 {
+  @media only screen and (max-width : 1000px) { padding-bottom: 65px; }
+}
+
+
+.project .project-action-bar .invira-btn-project {
+  padding: 9px 12px;
+  display: inline-block;
+  margin: 0;
+}
+
+.project .project-action-bar {
+  .InviraShadow(1);
+  background-color: #FFFFFF;
+  position: relative;
+  float: right;
+}
+
+
+/* LABEL */
+
+.invira-label {
+  padding-bottom: 35px;
+  cursor: pointer;
+}
+
+.invira-label-container {
+  .transition(all 0.18s);
+  .InviraShadow(1);
+}
+.invira-label-container:hover {
+  .SmoothShadow(1);
+}
+
+.invira-label .header-block {
+  height: 169px;
+  border-radius: 5px;
+  color: #fff;
+  line-height: 0px;
+  padding: 67px 19px;
+
+  overflow: hidden;
+  position: relative;
+  background: #91c46b;
+}
+
+.invira-label .header-block .icon-shadow {
+  position: absolute;
+  color: rgba(0, 0, 0, 0.05);
+  font-size: 14.25em;
+  top: -31px;
+  left: -12px;
+  /* right: -15px; */
+  -webkit-transform: rotate(-20deg);
+  font-family: 'FontAwesome';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-label:before {
+  content: "\f02c";
+
+}
+
+.invira-label .header-block h3 {
+  font-size: 23px;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+  font-weight: 300;
+  color: #FFF;
+}
+
+.invira-label.col-md-2 {
+  @media only screen and (max-width : 1000px) { padding-bottom: 65px; }
+}
+
+.invira-label .header-block .actions {
+  position: absolute;
+  top: 27px;
+  right: 8px;
+
+}
+
+
+.invira-label .header-block .actions .btn-round {
+  position: relative;
+  border-radius: 50%;
+  padding: 10px 0;
+  width: 38px;
+  height: 38px;
+  top: -19px;
+  text-align: center;
+}
+
+.invira-label .header-block .btn.btn-white {
+  background: #fff;
+}
+.invira-label .header-block .btn {
+  display: inline-block;
+  padding: 6px 14px;
+  background: #f2f2f2;
+  border-radius: 3px;
+  font-size: 0.8125em;
+  color: #b9bcbc;
+  transition: background .3s ease, color .3s ease;
+}
+
+
+/* no projects founds */
+
+.no-projects-found {
+  padding-top: 96px;
+}
+
+.no-projects-found h3 {
+  text-align: center;
+  font-size: 41px;
+}
+
+#no-projects-icon {
+  pointer-events: none;
+  display: none;
+  position: fixed;
+  z-index: 15;
+}

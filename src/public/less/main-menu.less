@@ -1,0 +1,90 @@
+@import 'globalvar.less';
+
+/* Main Menu */
+
+.invira-menu {
+  position: fixed;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  top: 0;
+  left: 0;
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  margin-top: 57px;
+  padding: 0;
+  background: @base;
+}
+
+.invira-menu li a {
+  display: block;
+  text-indent: -500em;
+  height: 70px;
+  width: 70px;
+  line-height: 68px;
+  font-size: 15px;
+  text-align: center;
+  color: rgba(62, 104, 140, 1);
+  position: relative;
+  border-bottom: 1px solid fade(@baseDark, 20%);
+  .transition(all 0.1s ease-in-out);
+
+}
+
+#invira-menu .arrow-left {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #FFF;
+  display: inline-block;
+  position: fixed;
+  top: 25px;
+  z-index: 100;
+  left: 60px;
+}
+
+
+.invira-menu li a:hover {
+  background: @baseDark;
+  color: #FFF;
+}
+
+/* class for current item */
+.invira-menu li.invira-current-item a {
+  background: @baseDark;
+  color: @background;
+}
+
+.invira-menu li.invira-current-item a:hover {
+
+}
+
+.invira-menu li a:before {
+  font-family: 'FontAwesome';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  text-indent: 0em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 1.4em;
+  -webkit-font-smoothing: antialiased;
+}
+
+.invira-menu li a.icon-logo:before {
+  content: "I";
+  font-weight: 700;
+  font-size: 300%;
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+}
+
+.invira-menu.invira-menu-shrink {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  margin-top: 0;
+}

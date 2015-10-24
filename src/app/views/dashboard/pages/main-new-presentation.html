@@ -1,0 +1,54 @@
+<div class="second-header">
+    <div class="second-header-inner">
+        <h3>Dashboard > New Presentation</h3>
+    </div>
+</div>
+<div class="container-fluid dashboard dialog in-forms">
+
+    <div class="row">
+        <div class="col-lg-6">
+                <section class="content form-base">
+                    <header>
+                        <h3>Presentation</h3>
+                    </header>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- Form -->
+                            <section>
+                                <form action="/project/new" method="post" id="new-project-form">
+
+                                    <div class="clearfix"></div>
+
+                                    <div class="input-group presentation-name">
+                                        <div class="input-group-addon">Name</div>
+                                        <input type="text" placeholder="Name" data-required-field name="projectName" id="project-name">
+                                        <span aria-hidden="true" class="status-icon" id="status-name"></span>
+                                    </div>
+
+                                    <div class="input-group presentation-label">
+                                        <div class="input-group-addon">Label</div>
+                                        <input type="text" placeholder="Label" data-required-field name="projectLabel" id="project-label">
+                                        <span aria-hidden="true" id="status-label" class="status-icon icon-question tooltipster" title="Tag your presentation with a label"></span>
+                                    </div>
+
+                                    <div class="input-group presentation-description">
+                                        <div class="input-group-addon">Description</div>
+                                        <textarea name="projectDescription" id="project-description"></textarea>
+
+                                        <span aria-hidden="true" class="status-icon" id="status-description"></span>
+                                    </div>
+
+                                    <div class="row">
+                                        <button class="invira-btn invira-btn-normal success" type="submit">Create</button><button class="invira-btn invira-btn-normal warning" id="cancel-new-project">Cancel</button>
+                                    </div>
+                                </form>
+                            </section>
+                        </div>
+                    </div>
+
+                </section>
+        </div>
+    </div>
+
+</div>

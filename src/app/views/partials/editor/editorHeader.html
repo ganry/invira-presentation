@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" class="decks edit is-editing"><!-- data-mode="preview">-->
+<head>
+    <meta charset="utf-8">
+    <title>{{{title}}}</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,500,700' rel='stylesheet' type='text/css'>
+
+    <!-- styles -->
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/slides.css" rel="stylesheet">
+    <link href="/css/codemirror.css" rel="stylesheet">
+
+    <link href="/css/editor/style.min.css" rel="stylesheet">
+    <link href="/css/editor/themes/default.min.css" rel="stylesheet">
+    <link href="/css/editor/themes/defaultCode.min.css" rel="stylesheet">
+    <link href="/css/editor/themes/defaultCodeEditor.min.css" rel="stylesheet">
+
+    <script src="/js/lib/modernizr.custom.min.js"></script>
+</head>
+<body>
+
+<div class="preload-wrapper">
+    <div id="preloader_3">
+    </div>
+</div>
+
+<header class="main-header">
+    <div class="inner-header">
+        <div class="invira-menu-icon"></div>
+        <div class="dashboard actionbar">
+            <a class="buttonized save-project tooltipster" data-invira-save-action title="Save" href="#">
+            <span class="title">
+                <i class="fa fa-save"> Save</i>
+            </span>
+            </a>
+        </div>
+        <div class="user-right-menu">
+            <div class="user-menu-wrapper">
+                <div><strong>{{user.local.name}}</strong></div>
+                <div class="usericon">
+                    <img src="{{user.settings.userpic}}" class="img-responsive">
+                </div>
+            </div><br />
+
+            <div class="toggle-menu-wrapper closed">
+                <div class="usericon">
+                    <img src="{{user.settings.userpic}}" class="img-responsive">
+                </div>
+                <a class="invira-btn invira-btn-user-menu" title="Logout" href="/logout"><i class="fa fa-user"></i> Logout</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Menu Begin -->
+<div class="sidebar" id="invira-menu">
+    <ul class="invira-menu">
+        <li data-route="main"><a href="/dashboard" class="fa fa-home tooltipster" title="Home">Home</a></li>
+        <li data-route="editor" data-invira-content-action data-invira-main class="invira-current-item"><a href="#" class="fa fa-pencil-square-o tooltipster" title="InVira Editor">Editor</a></li>
+        <li data-route="user" data-invira-content-action><a href="#" class="fa fa-paint-brush tooltipster" title="Profile">Theme</a></li>
+        <li data-route="user" data-invira-content-action><a href="#" class="fa fa-share-square-o tooltipster" title="Share your presentation">Share</a></li>
+
+        <li data-route="about" data-invira-content-action><a href="#" data-dialog="aboutDialog" class="trigger fa fa-info-circle tooltipster" title="About us">About</a></li>
+    </ul>
+    <div class="arrow-left" id="menu-active-indicator"></div>
+</div>
+<!-- Menu End -->
+

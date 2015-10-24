@@ -1,0 +1,219 @@
+@import 'var.less';
+
+/* select box */
+select {
+  font-family: Raleway,sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 5px;
+  margin: 0;
+  height: 30px;
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  border-radius:4px;
+  -webkit-box-shadow: 0 3px 0 @editToolbarBaseDarkColor, 0 -1px @editToolbarBaseColor inset;
+  -moz-box-shadow: 0 3px 0 @editToolbarBaseDarkColor, 0 -1px @editToolbarBaseColor inset;
+  box-shadow: 0 3px 0 @editToolbarBaseDarkColor, 0 -1px @editToolbarBaseColor inset;
+  background: @editToolbarBaseColor;
+  color:@baseFontColor;
+  border: 1px solid @editToolbarBorderColor;
+  outline:none;
+  display: inline-block;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  cursor:pointer;
+}
+
+/* Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding. */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  select {padding-right:18px}
+}
+
+label.font-selection {position:relative}
+label.font-selection:after {
+  content:'< >';
+  font-family: Raleway,sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+
+  color:@baseFontColor;
+  -webkit-transform:rotate(90deg);
+  -moz-transform:rotate(90deg);
+  -ms-transform:rotate(90deg);
+  transform:rotate(90deg);
+  right:8px; top:2px;
+  padding:0 0 2px;
+  border-bottom:1px solid @editToolbarBorderColor;
+  position:absolute;
+  pointer-events:none;
+}
+label.font-selection:before {
+  content:'';
+  right:6px; top:0px;
+  width:20px; height:20px;
+  background: @editToolbarBaseColor;
+  position:absolute;
+  pointer-events:none;
+  display:block;
+}
+
+/* General button style (reset) */
+.btn {
+  border: none;
+  font-family: inherit;
+  font-size: 18px;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 14px 41px;
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* Pseudo elements for icons */
+.btn:before,
+.icon-heart:after,
+.icon-star:after,
+.icon-plus:after,
+.icon-file:before {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  transition: background .3s ease;
+}
+
+
+/* Normal Button */
+.btn-normal {
+  background: @baseInputColor;
+  color: #fff;
+  /*
+  box-shadow: 0 6px @baseInputDarkColor;*/
+}
+.btn:active {
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+
+/* Normal Button a */
+.btn-normal-a {
+  border-radius:4px;
+}
+
+.btn-normal-a:hover {
+  background: @baseInputDarkColor;
+  /*
+  box-shadow: 0 4px @baseInputDarkColor;
+  top: 2px;
+  */
+}
+
+.btn-normal-a:active {
+  background: @baseInputDarkColor;
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+  transition: none;
+  /*
+  box-shadow: 0 0 @baseInputDarkColor;
+  top: 6px;
+  */
+}
+
+
+/* Close Button */
+.btn-close {
+  background: @base;
+  color: #fff;
+  /*box-shadow: 0 6px @baseDark;*/
+  border-radius: 4px;
+}
+
+.btn-close:hover {
+  background: @baseDark;
+  /*box-shadow: 0 4px @baseDark;
+  top: 2px;*/
+}
+
+.btn-close:active {
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+  background: @baseDark;
+  transition: none;
+  /*box-shadow: 0 0 @baseDark;
+  top: 6px;*/
+}
+
+/* Remove Button */
+.btn-remove {
+  background: @warningInputColor;
+  color: #fff;
+
+  /*box-shadow: 0 6px @warningInputDarkColor;*/
+  border-radius: 4px;
+}
+
+.btn-remove:hover {
+  background-color: @warningInputDarkColor;
+
+  /*
+  box-shadow: 0 4px @warningInputDarkColor;
+  top: 2px;
+  */
+}
+
+.btn-remove:active {
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+  background-color: @warningInputDarkColor;
+  transition: none;
+  /*
+  box-shadow: 0 0 @warningInputDarkColor;
+  top: 6px;
+  */
+}
+
+/* invira button */
+
+.invira-btn {
+  border: none;
+  font-family: inherit;
+  font-size: 18px;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 14px 41px;
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}

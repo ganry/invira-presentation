@@ -1,0 +1,116 @@
+{{> header}}
+
+<body>
+
+<div class="preload-wrapper">
+    <div id="preloader_3">
+    </div>
+</div>
+
+<header class="main-header">
+    <div class="inner-header">
+        <div class="invira-menu-icon"></div>
+        <div class="dashboard actionbar">
+            {{#if user.settings.betaChannel}}
+            <a class="buttonized new-project tooltipster" data-route="main" data-route-type="new-presentation" data-invira-content-action title="Create a new Presentation" href="#">
+            <span class="title">
+                <i class="fa fa-file-powerpoint-o"></i> New Presentation
+            </span>
+            </a>
+            {{/if}}
+        </div>
+        <div class="user-right-menu">
+            <div class="search-wrapper hidden-xs">
+                <div id="sb-search" class="sb-search">
+                    <form>
+                        <input class="sb-search-input" placeholder="Enter your search term..." type="search" value="" name="search" id="search">
+                        <input class="sb-search-submit" type="submit" value="">
+                        <span class="sb-icon-search"></span>
+                    </form>
+                </div>
+            </div>
+            <div class="user-menu-wrapper">
+                <div><strong>{{user.local.name}}</strong></div>
+                <div class="usericon">
+                    <img src="{{user.settings.userpic}}" class="img-responsive">
+                </div>
+            </div><br />
+
+            <div class="toggle-menu-wrapper closed">
+                <div class="usericon">
+                    <img src="{{user.settings.userpic}}" class="img-responsive">
+                </div>
+                <a class="invira-btn invira-btn-user-menu" title="Logout" href="/logout"><i class="fa fa-user"></i> Logout</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Menu Begin -->
+<div class="sidebar" id="invira-menu">
+    <ul class="invira-menu">
+        <li data-route="main" data-invira-content-action data-invira-main><a href="#" class="fa fa-home tooltipster" title="Home">Home</a></li>
+        <li data-route="editor" data-invira-content-action><a href="#" class="fa fa-pencil-square-o tooltipster" title="InVira Editor">Editor</a></li>
+        {{#if user.settings.betaChannel}}
+        <li data-route="user" data-invira-content-action><a href="#" class="fa fa-user tooltipster" title="Profile">User Profile</a></li>
+        <li data-route="about" data-invira-content-action><a href="#" data-dialog="aboutDialog" class="trigger fa fa-info-circle tooltipster" title="About us">About</a></li>
+        {{/if}}
+    </ul>
+    <div class="arrow-left" id="menu-active-indicator"></div>
+</div>
+<!-- Menu End -->
+
+
+<div class="main-wrapper" id="main-view">
+
+</div>
+
+<div class="spinner" id="loading-spinner" style="margin-top: 140px; width:200px; height:200px; margin-left:auto; margin-right:auto;">
+
+    <div class="circle one">
+        <div class="rotate">
+            <div class="position">
+                <div class="scale">
+                    <div class="shape"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="circle two">
+        <div class="rotate">
+            <div class="position">
+                <div class="scale">
+                    <div class="shape"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="circle three">
+        <div class="rotate">
+            <div class="position">
+                <div class="scale">
+                    <div class="shape"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="circle four">
+        <div class="rotate">
+            <div class="position">
+                <div class="scale">
+                    <div class="shape"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pngSpinner">
+        <div class="spinnerMask">
+            <div class="spinnerSprite" style="top: 0px;"></div>
+        </div>
+    </div>
+</div>
+
+{{> javascript}}
+
+</body>
+</html>

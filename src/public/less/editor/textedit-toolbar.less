@@ -1,0 +1,84 @@
+@import 'var.less';
+
+
+.edit-toolbar {
+  padding: 6px;
+  background: #FFFFFF;
+  border: 1px solid @editToolbarBorderColor;
+}
+
+.toolbar-divider {
+    border-left:1px solid @editToolbarBorderColor;
+    border-right:1px solid @editToolbarBaseDarkColor;
+  height: 14px;
+    position:relative;
+  display: inline-block;
+  }
+
+.toolbar-button {
+  position: relative;
+  display: inline-block;
+  padding: 7px;
+  background: none;
+  border: 1px solid @editToolbarBorderColor;
+  color: @baseFontColor;
+  background: @editToolbarBaseColor;
+  font-size: 0.9em;
+  overflow: visible;
+
+  border-radius: 6px;
+  -webkit-box-shadow: 0 3px 0 @editToolbarBaseDarkColor, 0 -1px @editToolbarBaseColor inset;
+  -moz-box-shadow: 0 3px 0 @editToolbarBaseDarkColor, 0 -1px @editToolbarBaseColor inset;
+  box-shadow: 0 3px 0 @editToolbarBaseDarkColor, 0 -1px @editToolbarBaseColor inset;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.toolbar-button.warning {
+  color: @secondBase;
+}
+
+
+
+.toolbar-button:hover {
+  -webkit-box-shadow: 0 3px 0 @editToolbarBaseDarkColor, 0 -1px @editToolbarBaseDarkColor inset;
+  -moz-box-shadow: 0 3px 0 @editToolbarBaseDarkColor, 0 -1px @editToolbarBaseDarkColor inset;
+  box-shadow: 0 3px 0 @editToolbarBaseDarkColor, 0 -1px @editToolbarBaseDarkColor inset;
+  background: @editToolbarBaseDarkColor;
+}
+
+.toolbar-button:focus {
+  outline: none;
+}
+
+
+.toolbar-button-icon {
+  display: block;
+}
+
+.toolbar-button-text {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.toolbar-button::after {
+  background: @editToolbarBaseColor;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -35px 0 0 -35px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  content: '';
+  opacity: 0;
+  pointer-events: none;
+}
+
+.toolbar-button.color {
+  max-height: 31px;
+}
