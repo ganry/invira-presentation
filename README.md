@@ -15,7 +15,7 @@ Live Demo is hosted on Heroku
 
 ## Build & development
 
-Run `grunt` for building and `grunt serve` for preview.
+Run `grunt` for dev building, `grunt dist` for distribution  and `grunt serve` for preview.
 
 ## License
 
