@@ -15,6 +15,8 @@ Live Demo is hosted on Heroku
 
 ## Build & development
 
+Before you can start you have to change the mongodb url in `src/config/env/development.js` and the app id's for facebook, twitter and google authentication in `src/config/auth.js`
+
 Run `grunt` for dev building, `grunt dist` for distribution  and `grunt serve` for preview.
 
 ## License
