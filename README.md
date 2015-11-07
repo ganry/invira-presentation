@@ -3,7 +3,7 @@
 InVira Presentation Framework
 =====================
 
-Presentation Framework with Online Editor and Dashboard for your Presentations by [Henry Keller](http://www.henrykeller.eu).
+Presentation Framework with Online Editor and Dashboard for your Presentations.
 
 This was a proof-of-concept prototype and is by far not finished. It was developed in under a week and is no longer in development.
 
