@@ -653,7 +653,7 @@
   font-size: 14px;
   margin-left: 12px;
   font-family: 'Open Sans', 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial;
-  color: #666666;
+  color: #666;
   padding-bottom: 1px;
   text-decoration: none;
 }
@@ -746,11 +746,11 @@
   border: 1px solid rgba(102, 102, 102, 0.5);
 }
 .main-header.main-header-shrink nav a {
-  color: #666666;
+  color: #666;
 }
 .main-header.main-header-shrink {
   background-color: #FFF;
-  color: #666666;
+  color: #666;
   padding-top: 9px;
   padding-left: 50px;
   padding-right: 50px;
@@ -1332,7 +1332,7 @@ input[type="search"].sb-search-input {
 .invira-btn-project:focus {
   background: #FFF;
   border: 1px solid #FFF;
-  color: #666666;
+  color: #666;
   text-decoration: none;
 }
 .invira-btn-project:hover,
@@ -2178,7 +2178,7 @@ footer.main-footer .inner-container h3 {
   background-color: #f4f4f4;
   color: #747474;
   z-index: 1;
-  width: 410px;
+  width: 458px;
   text-align: center;
   left: 50%;
   margin-left: -205px;
@@ -2378,7 +2378,7 @@ footer.main-footer a.social > i {
   width: 100%;
 }
 .second-header .second-header-inner h3 {
-  color: #666666;
+  color: #666;
   margin-left: 15px;
   font-size: 20px;
   margin-top: 17px;
@@ -2398,7 +2398,7 @@ footer.main-footer a.social > i {
   width: 100%;
   z-index: 999;
   top: 0;
-  color: #666666;
+  color: #666;
   height: 70px;
   box-shadow: 0 2px 0 rgba(204, 204, 204, 0.15);
 }
@@ -2989,7 +2989,7 @@ span.icon-check {
   color: #8ce196;
 }
 .in-forms .form-base section form .input-group .icon-question {
-  color: #666666;
+  color: #666;
   font-family: 'FontAwesome';
 }
 .icon-question:before {
@@ -6939,7 +6939,7 @@ span.icon-check {
   padding: 10px;
   background: #FAFAFA;
   border: 1px solid #EAEAEA;
-  color: #666666;
+  color: #666;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 /* Use this next selector to style things like font-size and line-height: */

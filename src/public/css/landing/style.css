@@ -658,11 +658,11 @@ body.home section.introduction article h2 {
   border: 1px solid rgba(102, 102, 102, 0.5);
 }
 .main-header.main-header-shrink nav a {
-  color: #666666;
+  color: #666;
 }
 .main-header.main-header-shrink {
   background-color: #FFF;
-  color: #666666;
+  color: #666;
   padding-top: 9px;
   padding-left: 50px;
   padding-right: 50px;
@@ -790,7 +790,7 @@ body.home section.screenshots div.screenshot-item .info-dot {
   -moz-animation: throbberAnim 1.5s infinite ease forwards;
   animation: throbberAnim 1.5s infinite ease forwards;
   -ms-animation: throbberAnim 1.5s infinite ease forwards;
-  background: #2ecc71;
+  background: #2ECC71;
   width: 15px;
   height: 15px;
   -webkit-border-radius: 50%;
@@ -803,7 +803,7 @@ body.home section.screenshots div.screenshot-item .info-dot {
   transition: opacity .7s ease;
   -ms-transition: opacity .7s ease;
   cursor: pointer;
-  border: 2px solid #2ecc71;
+  border: 2px solid #2ECC71;
   -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
@@ -868,7 +868,7 @@ section.introduction.shine {
   background-color: #f4f4f4;
   color: #747474;
   z-index: 1;
-  width: 410px;
+  width: 458px;
   text-align: center;
   left: 50%;
   margin-left: -205px;
@@ -1332,7 +1332,7 @@ section.introduction.shine {
   border-radius: 5px;
   border: 2px solid #EDEDED;
   background: #FAFAFA;
-  color: #666666;
+  color: #666;
 }
 /* Use this next selector to style things like font-size and line-height: */
 .tooltipster-default .tooltipster-content {

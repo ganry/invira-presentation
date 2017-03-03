@@ -140,12 +140,12 @@
 }
 html.decks.edit body {
   background: #eee;
-  background: -moz-radial-gradient(center, circle cover, #f7fbfc 0%, #eeeeee 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #f7fbfc), color-stop(100%, #eeeeee));
-  background: -webkit-radial-gradient(center, circle cover, #f7fbfc 0%, #eeeeee 100%);
-  background: -o-radial-gradient(center, circle cover, #f7fbfc 0%, #eeeeee 100%);
-  background: -ms-radial-gradient(center, circle cover, #f7fbfc 0%, #eeeeee 100%);
-  background: radial-gradient(center, circle cover, #f7fbfc 0%, #eeeeee 100%);
+  background: -moz-radial-gradient(center, circle cover, #f7fbfc 0%, #EEE 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #f7fbfc), color-stop(100%, #EEE));
+  background: -webkit-radial-gradient(center, circle cover, #f7fbfc 0%, #EEE 100%);
+  background: -o-radial-gradient(center, circle cover, #f7fbfc 0%, #EEE 100%);
+  background: -ms-radial-gradient(center, circle cover, #f7fbfc 0%, #EEE 100%);
+  background: radial-gradient(center, circle cover, #f7fbfc 0%, #EEE 100%);
   background-color: #f7fbfc;
 }
 .invira a {

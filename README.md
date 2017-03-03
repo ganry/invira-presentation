@@ -22,7 +22,7 @@ Run `grunt` for dev building, `grunt dist` for distribution  and `grunt serve` f
 
 ## License
 
-    Copyright (c) 2015 Henry Keller <henry@inapp.eu>
+    Copyright (c) 2015 Henry Keller <henry@creativemind.info>
 
     Permission is hereby granted, free of charge, to any person obtaining a copy
     of this software and associated documentation files (the "Software"), to deal

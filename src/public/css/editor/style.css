@@ -653,7 +653,7 @@
   font-size: 14px;
   margin-left: 12px;
   font-family: 'Open Sans', 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial;
-  color: #666666;
+  color: #666;
   padding-bottom: 1px;
   text-decoration: none;
 }
@@ -746,11 +746,11 @@
   border: 1px solid rgba(102, 102, 102, 0.5);
 }
 .main-header.main-header-shrink nav a {
-  color: #666666;
+  color: #666;
 }
 .main-header.main-header-shrink {
   background-color: #FFF;
-  color: #666666;
+  color: #666;
   padding-top: 9px;
   padding-left: 50px;
   padding-right: 50px;
@@ -1332,7 +1332,7 @@ input[type="search"].sb-search-input {
 .invira-btn-project:focus {
   background: #FFF;
   border: 1px solid #FFF;
-  color: #666666;
+  color: #666;
   text-decoration: none;
 }
 .invira-btn-project:hover,
@@ -1838,7 +1838,7 @@ div.colorPicker-swatch {
 .dialog-content-wrapper {
   font-size: 25px;
   text-align: center;
-  color: #666666;
+  color: #666;
 }
 .dialog-content-wrapper p {
   margin: 0;
@@ -2154,7 +2154,7 @@ html.decks.edit .toolbars .toolbar-add-block-option {
   margin: 0px 0px;
   padding: 21px 0px;
   text-align: center;
-  color: #666666;
+  color: #666;
   /* border-left: 5px solid #FAFAFA;*/
   cursor: pointer;
   font-size: 12px;
@@ -2180,7 +2180,7 @@ html.decks.edit .toolbars .toolbar-add-block-option .toolbar-add-block-option-la
 html.decks.edit .toolbars .toolbar[data-type="text"],
 html.decks.edit .toolbars .toolbar[data-type="code"] {
   width: 100%;
-  color: #666666;
+  color: #666;
 }
 html.decks.edit .toolbars .toolbar-container {
   padding: 13px;
@@ -2211,7 +2211,7 @@ html.decks.edit .toolbars .toolbar-option .toolbar-option-label {
   font-size: 11px;
   font-weight: normal;
   text-transform: uppercase;
-  color: #666666;
+  color: #666;
   cursor: default;
 }
 html.decks.edit .toolbars .toolbar-text .toolbar-text-input {
@@ -2224,11 +2224,11 @@ html.decks.edit .toolbars .toolbar-text .toolbar-text-input {
   height: 70px;
   background: #FFF;
   border-radius: 6px;
-  -webkit-box-shadow: 0 3px 0 #efefef, 0 -1px #fafafa inset;
-  -moz-box-shadow: 0 3px 0 #efefef, 0 -1px #fafafa inset;
-  box-shadow: 0 3px 0 #efefef, 0 -1px #fafafa inset;
-  border: 1px solid #eaeaea;
-  color: #666666;
+  -webkit-box-shadow: 0 3px 0 #EFEFEF, 0 -1px #FAFAFA inset;
+  -moz-box-shadow: 0 3px 0 #EFEFEF, 0 -1px #FAFAFA inset;
+  box-shadow: 0 3px 0 #EFEFEF, 0 -1px #FAFAFA inset;
+  border: 1px solid #EAEAEA;
+  color: #666;
   -webkit-appearance: none;
   resize: none;
 }
@@ -3157,12 +3157,12 @@ select {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  -webkit-box-shadow: 0 3px 0 #efefef, 0 -1px #fafafa inset;
-  -moz-box-shadow: 0 3px 0 #efefef, 0 -1px #fafafa inset;
-  box-shadow: 0 3px 0 #efefef, 0 -1px #fafafa inset;
-  background: #fafafa;
-  color: #666666;
-  border: 1px solid #eaeaea;
+  -webkit-box-shadow: 0 3px 0 #EFEFEF, 0 -1px #FAFAFA inset;
+  -moz-box-shadow: 0 3px 0 #EFEFEF, 0 -1px #FAFAFA inset;
+  box-shadow: 0 3px 0 #EFEFEF, 0 -1px #FAFAFA inset;
+  background: #FAFAFA;
+  color: #666;
+  border: 1px solid #EAEAEA;
   outline: none;
   display: inline-block;
   -webkit-appearance: none;
@@ -3184,7 +3184,7 @@ label.font-selection:after {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 14px;
-  color: #666666;
+  color: #666;
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
@@ -3192,7 +3192,7 @@ label.font-selection:after {
   right: 8px;
   top: 2px;
   padding: 0 0 2px;
-  border-bottom: 1px solid #eaeaea;
+  border-bottom: 1px solid #EAEAEA;
   position: absolute;
   pointer-events: none;
 }
@@ -3202,7 +3202,7 @@ label.font-selection:before {
   top: 0px;
   width: 20px;
   height: 20px;
-  background: #fafafa;
+  background: #FAFAFA;
   position: absolute;
   pointer-events: none;
   display: block;
@@ -5050,7 +5050,7 @@ html.decks.edit .projector .slide-options-toolbar .toolbar-option {
   width: 100%;
   padding: 12px 0;
   text-align: center;
-  color: #666666;
+  color: #666;
   cursor: pointer;
   font-size: 12px;
   -webkit-tap-highlight-color: transparent;
@@ -5089,12 +5089,12 @@ html.decks.preview body {
   font-smooth: auto;
   font-weight: 400;
   background: #eee;
-  background: -moz-radial-gradient(center, circle cover, #f7fbfc 0%, #eeeeee 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #f7fbfc), color-stop(100%, #eeeeee));
-  background: -webkit-radial-gradient(center, circle cover, #f7fbfc 0%, #eeeeee 100%);
-  background: -o-radial-gradient(center, circle cover, #f7fbfc 0%, #eeeeee 100%);
-  background: -ms-radial-gradient(center, circle cover, #f7fbfc 0%, #eeeeee 100%);
-  background: radial-gradient(center, circle cover, #f7fbfc 0%, #eeeeee 100%);
+  background: -moz-radial-gradient(center, circle cover, #f7fbfc 0%, #EEE 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #f7fbfc), color-stop(100%, #EEE));
+  background: -webkit-radial-gradient(center, circle cover, #f7fbfc 0%, #EEE 100%);
+  background: -o-radial-gradient(center, circle cover, #f7fbfc 0%, #EEE 100%);
+  background: -ms-radial-gradient(center, circle cover, #f7fbfc 0%, #EEE 100%);
+  background: radial-gradient(center, circle cover, #f7fbfc 0%, #EEE 100%);
   background-color: #f7fbfc;
 }
 html.decks.preview .slides.error {
@@ -5273,11 +5273,11 @@ html.decks.preview .page-wrapper {
 .edit-toolbar {
   padding: 6px;
   background: #FFFFFF;
-  border: 1px solid #eaeaea;
+  border: 1px solid #EAEAEA;
 }
 .toolbar-divider {
-  border-left: 1px solid #eaeaea;
-  border-right: 1px solid #efefef;
+  border-left: 1px solid #EAEAEA;
+  border-right: 1px solid #EFEFEF;
   height: 14px;
   position: relative;
   display: inline-block;
@@ -5287,15 +5287,15 @@ html.decks.preview .page-wrapper {
   display: inline-block;
   padding: 7px;
   background: none;
-  border: 1px solid #eaeaea;
-  color: #666666;
-  background: #fafafa;
+  border: 1px solid #EAEAEA;
+  color: #666;
+  background: #FAFAFA;
   font-size: 0.9em;
   overflow: visible;
   border-radius: 6px;
-  -webkit-box-shadow: 0 3px 0 #efefef, 0 -1px #fafafa inset;
-  -moz-box-shadow: 0 3px 0 #efefef, 0 -1px #fafafa inset;
-  box-shadow: 0 3px 0 #efefef, 0 -1px #fafafa inset;
+  -webkit-box-shadow: 0 3px 0 #EFEFEF, 0 -1px #FAFAFA inset;
+  -moz-box-shadow: 0 3px 0 #EFEFEF, 0 -1px #FAFAFA inset;
+  box-shadow: 0 3px 0 #EFEFEF, 0 -1px #FAFAFA inset;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
@@ -5305,10 +5305,10 @@ html.decks.preview .page-wrapper {
   color: #c73935;
 }
 .toolbar-button:hover {
-  -webkit-box-shadow: 0 3px 0 #efefef, 0 -1px #efefef inset;
-  -moz-box-shadow: 0 3px 0 #efefef, 0 -1px #efefef inset;
-  box-shadow: 0 3px 0 #efefef, 0 -1px #efefef inset;
-  background: #efefef;
+  -webkit-box-shadow: 0 3px 0 #EFEFEF, 0 -1px #EFEFEF inset;
+  -moz-box-shadow: 0 3px 0 #EFEFEF, 0 -1px #EFEFEF inset;
+  box-shadow: 0 3px 0 #EFEFEF, 0 -1px #EFEFEF inset;
+  background: #EFEFEF;
 }
 .toolbar-button:focus {
   outline: none;
@@ -5322,7 +5322,7 @@ html.decks.preview .page-wrapper {
   pointer-events: none;
 }
 .toolbar-button::after {
-  background: #fafafa;
+  background: #FAFAFA;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -5481,9 +5481,9 @@ html.decks.preview .page-wrapper {
 /* This is the default Tooltipster theme (feel free to modify or duplicate and create multiple themes!): */
 .tooltipster-default {
   border-radius: 5px;
-  border: 2px solid #eaeaea;
-  background: #fafafa;
-  color: #666666;
+  border: 2px solid #EAEAEA;
+  background: #FAFAFA;
+  color: #666;
 }
 /* Use this next selector to style things like font-size and line-height: */
 .tooltipster-default .tooltipster-content {

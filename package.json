@@ -2,7 +2,7 @@
   "name": "invira",
   "version": "0.2.1",
   "description": "invira",
-  "author": "InApp Studio <info@inapp.eu>",
+  "author": "Henry Keller <henry@creativemind.info>",
   "license": "MIT",
   "dependencies": {
     "express": "~4.12.3",
